@@ -9,9 +9,10 @@ const DIARIES = [
         date: "2025.12.25", 
         title: "今日の晩ごはん", 
         content: "今日はトマトパスタを作りました。400文字以内の日記です。",
-        image: "diary_photo/赤茄子.jpg" 
+        image: "diary_photo/akanasu.jpg" 
     }
 
 ];
+
 
 
