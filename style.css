@@ -1,0 +1,65 @@
+:root {
+    --primary-color: #d32f2f;
+    --bg-color: #f9f9f9;
+    --card-bg: #ffffff;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: var(--bg-color);
+}
+
+header {
+    background: #fff;
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+h1 { color: var(--primary-color); }
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid #ddd;
+}
+
+nav button {
+    background: none; border: none; padding: 1rem;
+    cursor: pointer; font-weight: bold; color: #666;
+}
+
+nav button.active {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+main { max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
+
+.card {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.article-item {
+    display: flex; gap: 1rem; padding: 1rem;
+    border-bottom: 1px solid #eee; cursor: pointer;
+}
+
+.article-item:hover { background: #f0f0f0; }
+
+.date { color: #888; font-size: 0.9rem; }
+
+.diary-img { max-width: 100%; border-radius: 4px; margin-top: 1rem; }
+
+.back-btn { cursor: pointer; color: #666; margin-bottom: 1rem; display: inline-block; }
+
+footer { text-align: center; padding: 2rem; color: #aaa; }
