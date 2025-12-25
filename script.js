@@ -35,7 +35,7 @@ function showPage(pageId) {
                     <span class="date">${d.date}</span>
                     <h3>${d.title}</h3>
                     <p>${d.content}</p>
-                    <img src="diary_photo/赤茄子.jpg" alt="日記画像" class="diary-img">
+                    <img src="${d.image}" alt="日記画像" class="diary-img">
                 </div>`).join('');
             contentArea.innerHTML = `<h2>日記</h2>${diaries}`;
             break;
@@ -67,3 +67,4 @@ function viewDetail(id) {
 // 初回読み込み
 
 window.onload = () => showPage('home');
+
